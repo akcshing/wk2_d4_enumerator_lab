@@ -43,16 +43,16 @@ class TestStarSystem < Minitest::Test
     assert_equal(@jupiter, result)
   end
   #
-  # def test_get_smallest_planet
-  #   result = @solar_system.get_smallest_planet
-  #   assert_equal(@pluto, result)
-  # end
+  def test_get_smallest_planet
+    result = @solar_system.get_smallest_planet
+    assert_equal(@pluto, result)
+  end
   #
-  # def test_get_planets_with_no_moons
-  #   expected_planets = [ @mercury, @venus ]
-  #   result = @solar_system.get_planets_with_no_moons
-  #   assert_equal(expected_planets, result)
-  # end
+  def test_get_planets_with_no_moons
+    expected_planets = [ @mercury, @venus ]
+    result = @solar_system.get_planets_with_no_moons
+    assert_equal(expected_planets, result)
+  end
   #
   # def test_get_names_of_planet_with_more_than_four_moons
   #   expected_names = ["Jupiter", "Neptune", "Saturn", "Uranus"]

@@ -29,4 +29,12 @@ class StarSystem
     # p diameters.max
     # @planets.max{ |planet| planet.diameter }
   end
+
+  def get_smallest_planet
+    @planets.reduce(planets[0]) {|smallest, planet| smallest.diameter < planet.diameter ? smallest : planet}
+  end
+
+  def get_planets_with_no_moons
+    @planets.find_all {|planet| planet.number_of_moons == 0}
+  end
 end
