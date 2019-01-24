@@ -38,10 +38,10 @@ class TestStarSystem < Minitest::Test
     assert_equal(@mars, result)
   end
   #
-  # def test_get_largest_planet
-  #   result = @solar_system.get_largest_planet
-  #   assert_equal(@jupiter, result)
-  # end
+  def test_get_largest_planet
+    result = @solar_system.get_largest_planet
+    assert_equal(@jupiter, result)
+  end
   #
   # def test_get_smallest_planet
   #   result = @solar_system.get_smallest_planet
