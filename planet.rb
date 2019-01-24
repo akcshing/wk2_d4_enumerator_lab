@@ -1,4 +1,4 @@
-requrie("pry")
+require("pry")
 
 class Planet
   attr_reader :name, :diameter, :distance_from_sun, :number_of_moons
